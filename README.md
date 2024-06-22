@@ -7,10 +7,10 @@ This repository contains the code and data for a mini-project on facial expressi
 
     |No.| Student Name    | Student ID |
     | --------| -------- | ------- |
-    |1|||
-    |2|||
-    |3|||
-    |4|||
+    |1|Trần Phi Hùng|21280018|
+    |2|Nguyễn Đông Hải|21280012|
+    |3|Trần Đức Trung|21280115|
+    |4|Lê Hồ Hoàng Anh|21280085|
 
 - The submission deadline is strict: **11:59 PM** on **June 22nd, 2024**. Commits pushed after this deadline will not be considered.
 
@@ -32,11 +32,24 @@ This project is designed to be completed in the following steps:
 3. **Complete the Tasks**: Open the ```notebooks/EDA.ipynb``` notebook in your Jupyter Notebook environment. The notebook is designed to guide you through various tasks, including:
     
     1. Prerequisite
-    2. Principle Component Analysis
-    3. Image Classification
+    2. Principle Component Analysis / CNN for feature engineering
+    3. Image Classification algorithms list:
+        - Decision Tree (Transformed data: 0.29  /  Original data: 0.27)
+        - Random Forest (Transformed data: 0.41  /  Original data: 0.36)
+        - Naive Bayes (Transformed data: 0.31  /  Original data: 0.23)
+        - MLP Classifier (Transformed data: 0.42  /  Original data: 0.29)
     4. Evaluating Classification Performance 
 
     Make sure to run all the code cells in the ```EDA.ipynb``` notebook and ensure they produce output before committing and pushing your changes.
+
+4. **Some interesting findings**:
+    
+    - CNN is useful in feature engineering but sometimes these features are unnecessary and can increase the complexity of the model.
+    - PCA help improving performance because: Reduce Noise and Redundancy, Increase Generalization, Optimize Performance.
+    - The more complex (more layer, layer size) the MLP, the better performance it tends to achieve.
+    - Naive Bayes performs better in binary classification problems than in multi-class classification problems.
+    - Random forest is a machine learning model that is somewhat comparable to deep learning.
+    - Machine learning models is quite simple so dont have good performance in emotion-based image classification, but maybe more complex models, such as deep learning models, will further improve the results.
 
 5. **Commit and Push Your Changes**: Once you've completed the tasks outlined in the notebook, commit your changes to your local repository and push them to your forked repository on GitHub.
 
